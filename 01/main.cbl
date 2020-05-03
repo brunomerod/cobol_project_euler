@@ -7,7 +7,8 @@
 
 IDENTIFICATION DIVISION.
 PROGRAM-ID. PROJECT-EULER-01.
-AUTHOR. github.com/brunomerod.
+*> AUTHOR. github.com/brunomerod.
+*> DATE-WRITTEN. May 2nd 2020.
 
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
@@ -26,7 +27,8 @@ PROCEDURE DIVISION.
 STOP RUN.
 
 Loop-1.
-        IF FUNCTION MOD(Ind,3) = 0 OR FUNCTION MOD(Ind,5) = 0 THEN
+        IF FUNCTION MOD(Ind,3) = 0 
+        OR FUNCTION MOD(Ind,5) = 0 THEN
             PERFORM Loop-2
         END-IF.
 
